@@ -1,0 +1,28 @@
+:root {
+  --gradient: linear-gradient(45deg, #173b6f, #2f71a3, #87b7e5, #b7aab4);
+}
+
+.gradient-animation {
+  background-size: 600%;
+  background-image: var(--gradient);
+  background-blend-mode: lighten;
+  animation: bg-animation 90s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}

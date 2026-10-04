@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hedia Chan's Portfolio | About Page</title>
+    <meta
+      name="description"
+      content="Hedia Chan is a Vancouver-based junior UI designer at IDEA School of Design. She focuses on creating clear, accessible, and user-friendly digital experiences through UI/UX design, visual systems, and interaction design. Her work explores how people understand interfaces, using research, iteration, and simple visual language to improve usability."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/branding-images/hedia-chan-ghostcat-illustration.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/branding-images/hedia-chan-ghostcat-illustration.png"
+    />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="about-page">
+    <header class="hero-header">
+      <ul class="nav-branding">
+        <li class="nav-branding-logo">
+          <a href="index.html">
+            <img
+              src="assets/branding-images/hedia-chan-logo2.png"
+              alt="hedia chan's portfolio logo"
+            />
+          </a>
+        </li>
+        <li class="nav-branding-item">
+          <ul class="nav-branding-group">
+            <li class="nav-branding-item">
+              <a href="work.html" class="nav-link-primary">Work</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="about.html" class="nav-link-primary">About</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <ul class="about-grid">
+      <li class="about-grid-image">
+        <figure class="about-image">
+          <img
+            src="assets/branding-images/hedia-chan-profile-v1.jpeg"
+            width="1500"
+            height="1500"
+            alt="Hedia Chan's Photo"
+          />
+        </figure>
+      </li>
+      <li class="about-grid-text">
+        <h2>Good Morning~</h2>
+
+        <h3>
+          Hello! I’m Hedia Chan (Ching Kwan), an Interaction Design student at
+          Capilano University.
+        </h3>
+        <p>
+          I enjoy exploring both digital and hands-on design. In secondary
+          school in Hong Kong, I learned photography, leather design, woodwork,
+          and other crafts. These experiences helped me build a strong sense of
+          creativity and attention to detail.
+        </p>
+        <p>
+          I am adaptable and always willing to try new things. I have strong
+          observation and communication skills, and I am comfortable working
+          independently to solve problems. I also completed an applied learning
+          course in Health Care and Nursing Practice, where I earned a Standard
+          First Aid Certificate.
+        </p>
+        <p>
+          After graduating from high school, I worked with my friends as a
+          vendor at ACGHK, a platform that supports local and international
+          creators in animation and Asian pop culture. This experience helped me
+          understand teamwork, creativity, and real-world project work.
+        </p>
+      </li>
+    </ul>
+    <ul class="footer-global">
+      <li class="footer-tagline">
+        <h2>Find me!</h2>
+        <p>
+          Feel free to reach out with any questions, collaborations, or just to
+          chat about design!
+        </p>
+      </li>
+
+      <li class="footer-contact-social">
+        <h2>Contact & Social</h2>
+        <ul class="footer-socials-list">
+          <li class="footer-item">
+            <a
+              href="https://www.instagram.com/hheachqn?igsh=MWVvaTI2MzdoY2loYQ=="
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer-item">
+            <a
+              href="https://www.linkedin.com/in/hedia-chan-designer2008/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="mailto:hediachann@gmail.com" target="_blank">
+              hediachann@gmail.com</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-full-width">
+        <p class="footer-fineprint">
+          &copy; <span id="copyright-years"></span> Hedia Chan
+          <span class="heart">❤</span>
+          CK
+        </p>
+        <script>
+          document.getElementById("copyright-years").textContent +=
+            new Date().getFullYear();
+        </script>
+      </li>
+    </ul>
+  </body>
+</html>
