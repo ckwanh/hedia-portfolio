@@ -968,6 +968,21 @@ a.nav-link-primary:hover {
   margin-bottom: 1rem; /* Space between each navigation item */
 }
 
+/* Role container for sidebar */
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: var(--gap-small);
+  width: 100%;
+}
+.project-facts dt {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+.project-facts dd {
+  font-weight: 700;
+  line-height: 1.2;
+}
 /* 
 
  █████  ██████   ██████  ██    ██ ████████ 
