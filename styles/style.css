@@ -122,7 +122,7 @@
   --color-text-light: #ebf6fc;
   --color-accent-primary: #5ebfe0;
   --color-accent-secondary: #0096a5;
-  --color-overlay-primary: rgba(0, 151, 208, 0.5);
+  --color-overlay-primary: rgba(0, 151, 208, 0.3);
   --color-highlight: lemonchiffon;
   --color-fallback: #0096a5; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -303,7 +303,7 @@ svg {
 
 /* Adds a dashed border to help you see the box while you're designing */
 .border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
+  border: 1px solid var(--color-overlay-primary); /* This uses your custom accent color */
   /* TODO: Delete this later – it’s just here to help you see the box while you work */
 }
 
@@ -934,6 +934,127 @@ a.nav-link-primary:hover {
 /* Optional container for future overlay customization */
 .project-details-overlay {
   /* Placeholder: no custom styles yet */
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: var(--gap-small);
+  border-bottom: 2px solid var(--color-accent-primary);
+  margin-bottom: var(--padding-small);
+}
+
+.tab {
+  font: inherit;
+  font-family: var(--font-family-heading);
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent; /* invisible until selected */
+  padding: var(--padding-tiny) var(--padding-small);
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--color-link-hover);
+}
+
+/* The active tab: this selects any button whose aria-selected is "true" */
+.tab[aria-selected="true"] {
+  color: var(--h1-color);
+  border-bottom-color: var(--color-accent-secondary);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
+}
+
+/* Makes sure hidden panels stay hidden even if other CSS sets display */
+.tab-panel[hidden] {
+  display: none;
+}
+
+/* Motion tab */
+.motion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--gap-medium);
+  margin-bottom: var(--padding-medium);
+}
+.motion-item {
+  text-align: center;
+  margin-bottom: var(--padding-small);
+}
+
+.motion-item figcaption {
+  font-size: 0.95rem;
+  line-height: 1.3;
+  margin-top: var(--padding-tiny);
+}
+
+/* Videos */
+.motion-video {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  aspect-ratio: 394 / 852;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-full-width);
+}
+
+/* Homepage video + replay overlay */
+.motion-frame {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.replay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-tiny);
+  border: none;
+  background: var(--color-overlay-primary);
+  backdrop-filter: blur(2px);
+  color: var(--color-text-light);
+  font: inherit;
+  font-family: var(--font-family-heading);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--duration-normal);
+}
+.replay i {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-primary);
+  font-size: 1.4rem;
+  transition: transform var(--duration-normal);
+}
+.replay:hover {
+  background: rgba(23, 59, 111, 0.6);
+}
+.replay:hover i {
+  transform: rotate(-90deg);
+}
+.replay:focus-visible {
+  outline: 3px solid var(--color-accent-primary);
+  outline-offset: -6px;
+}
+.replay[hidden] {
+  display: none;
 }
 
 .ghost-cat {
