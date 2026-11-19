@@ -43,16 +43,5 @@ git clone https://github.com/ckwanh/hedia-portfolio.git
 cd hedia-portfolio
 Open index.html or work.html in a browser, or use the Live Server extension in VS Code.
 
-Project structure
-├── index.html            Landing page
-├── work.html             Project grid
-├── about.html            About page
-├── resume.html           Resume
-├── sketchbook.html       Sketches and other work
-├── project-*.html        Individual case studies
-├── styles/               Stylesheets
-├── js/                   Scripts
-└── assets/               Images and branding files
-License
-
+## License
 GPL-3.0, inherited from the original template. See LICENSE.
